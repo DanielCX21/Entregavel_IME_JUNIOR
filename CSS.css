@@ -1,1 +1,39 @@
 
+@font-face {
+    font-family: 'Concert-One';
+    src: url(fontes/ConcertOne-Regular.ttf) format('truetype');
+}
+
+header{
+background-color:#40a798;
+color: white;
+font-family:'Concert-One';
+text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+font-size: 18px;
+
+}
+.cabeçalho{
+display: flex;
+justify-content: space-between;
+}
+
+.Titulo{
+    display: flex;
+}
+
+.Logo{
+padding: 5px;
+}
+
+.Botões{
+    color: white;
+    font-family: 'Concert-One';
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    padding: 20px;
+    
+}
