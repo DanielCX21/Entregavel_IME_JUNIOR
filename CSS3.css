@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Concert-One';
+    src: url(ConcertOne-Regular.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header{
+    background-color:#40a798;
+    color: white;
+    font-family:'Concert-One';
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    z-index: 2; 
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Titulo{
+    display: flex;
+}
+
+.Logo{
+    padding: 5px;
+}
+
+.Botões {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Botões1, .Botões2, .Botões3{
+    color: white;
+    font-family: 'Concert-One';
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px; 
+    transition: color 0.3s; 
+}
+
+.Botões1:hover, .Botões2:hover, .Botões3:hover {
+    color: lightgray; /* Define a cor do texto ao passar o mouse */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin: 25px auto; 
+    top: 300px;
+    bottom: 100px; 
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #f5f5f5;
+}
+
+.mensagem {
+    text-align: center;
+    margin-top: 165px; /* Define a margem superior para criar espaço entre o header e a mensagem */
+    font-family: 'Concert-One';
+    font-size: large;
+    color: #ffa500;
+}
+
+.image-grid img {
+    border: 40px solid lightgray; 
+    padding: 0px; 
+    margin: 0px;
+    max-width: 80%; 
+    position: relative;
+}
+
+/* Centralize a grade de imagens */
+.center {
+    display: flex;
+    justify-content: center;                            
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+/* Crie um layout de grade 3x3 */
+.image-grid {
+    transform: translateY(200px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+.image-grid figure figcaption {
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Concert-One';
+    font-size: 25px;
+    margin-top: 5px; /* Espaçamento superior entre a imagem e a descrição */
+    color: #ffa500;
+}
+
+.rodape_final{
+    background-color: #40a798;
+    color: white;
+    font-family: 'Concert-One';
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 10px;
+}
+
+.rodape_final {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
