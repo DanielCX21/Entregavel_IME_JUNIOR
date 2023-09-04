@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'Concert-One';
+    src: url(ConcertOne-Regular.ttf) format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#40a798;
+    color: white;
+    font-family:'Concert-One';
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Titulo{
+    display: flex;
+}
+
+.Logo{
+    padding: 5px;
+}
+
+
+.Botões{
+    color: white;
+    font-family: 'Concert-One';
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+.Botões1, .Botões2, .Botões3{
+  color: white;
+  font-family: 'Concert-One';
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+}
+.Botões1:hover , .Botões2:hover, .Botões3:hover{  
+  color: lightgray;
+}
+
+
+.texto_aleatorio{
+    font-family: 'Concert-One';
+    color: white;
+    background-color: #ff5c00;
+    display: flex; 
+    
+}
+
+.cachorro{
+
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.rodape_final{
+    background-color: #40a798;
+    color: white;
+    font-family: 'Concert-One';
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail img {
+  width: 100px;
+  height: auto;
+}
+
+.thumbnail:hover {
+  border-color: #40a798;
+}
+
+.carousel {
+  width: 60%;
+  height: 500px; /* Defina a altura adequada para os slides */
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  text-align: center;
+  border-bottom: 4px solid #40a798;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#thumb1:checked ~ .carousel .slides {
+  transform: translateY(0%);
+}
+
+#thumb2:checked ~ .carousel .slides {
+  transform: translateY(-20%);
+}
+
+#thumb3:checked ~ .carousel .slides {
+  transform: translateY(-40%);
+}
+
+#thumb4:checked ~ .carousel .slides {
+  transform: translateY(-60%);
+}
+
+#thumb5:checked ~ .carousel .slides {
+  transform: translateY(-80%);
+}
