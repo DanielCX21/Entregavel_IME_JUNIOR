@@ -1,2 +1,2 @@
-# Entreg-vel_IME_JUNIOR
+# Entregável_IME_JUNIOR
 Projeto em grupo Daniel Castro, Hilgert e Santiago. Primeiro ano de engenharia no IME.
